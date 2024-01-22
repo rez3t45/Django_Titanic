@@ -51,10 +51,9 @@ div {
     text-align: center;
 }
 
-span {
+span { 
     display: inline-block; 
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    border-radius: 10px; 
+    padding: 10px 20px; 
+    color: #161414;
+    font-size: 30px; 
 }
