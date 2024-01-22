@@ -1,0 +1,26 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediccion de Supervivencia TItanic</title>
+
+    <!-- index.html --> 
+    <title>Predicción de Supervivencia Titanic</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ 
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Predict Survived</button>
+    </form>
+
+    {% if predicted_ %}
+    <div>
+        <span>El pasajero sobrevivio : {{ predicted_ }}<span>
+    </div>
+    {% endif %}
+</body>
+</html>

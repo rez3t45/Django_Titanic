@@ -1,0 +1,60 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    width: 30%; /* Ajusta el ancho según tu preferencia */
+    margin-bottom: 8px;
+    color: #3d3a2f;
+}
+
+input {
+    width: 65%; /* Ajusta el ancho según tu preferencia */
+    padding: 8px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #4632b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3ebbcc;
+}
+
+/* Nuevos estilos para el span */
+div {
+    text-align: center;
+}
+
+span {
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 10px; 
+}
