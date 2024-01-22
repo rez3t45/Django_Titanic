@@ -1,24 +1,25 @@
-# Predicción de Supervivencia en el Titanic
+# Predicción de Supervivencia en el Titanic con Django
 
-Este proyecto se enfoca en predecir la supervivencia de los pasajeros a bordo del Titanic utilizando machine learning. Varios modelos fueron evaluados, y el K-Nearest Neighbors (KNN) fue seleccionado como el modelo final para realizar las predicciones.
+Este proyecto Django utiliza un modelo K-Nearest Neighbors (KNN) entrenado para predecir la supervivencia de los pasajeros a bordo del Titanic.
+
+![Texto Alternativo](test_titanic.png)
+
 
 ## Contenido del Repositorio
 
 ### Archivos del Código Fuente
-- `titanic_model.ipynb`: Jupyter Notebook que contiene el análisis de datos, la selección del modelo y el entrenamiento del modelo KNN.
-- `titanic_predictor.py`: Script de Python que implementa la funcionalidad de predicción utilizando el modelo KNN entrenado.
+- `Titanic_Knn_Predict_Survival.pkl`: Modelo entrenado pkl que contiene el análisis de datos, la selección del modelo y el entrenamiento del modelo KNN. 
+- `manage.py`: Script de Django para gestionar la aplicación.
 
-### Archivos de Datos
-- `Titanic_train.csv`: Conjunto de datos de entrenamiento utilizado para entrenar y evaluar los modelos.
-- `Titanic_test.csv`: Conjunto de datos de prueba utilizado para realizar predicciones.
+### App  `titanic_app`
+- `models.py`: Define el modelo de datos de la aplicación Django.
+- `views.py`: Contiene las vistas de la aplicación, incluida la vista que utiliza el modelo KNN para realizar predicciones.
+- `urls.py`: Gestiona las URL de la aplicación.
 
 ### Archivos de Configuración
 - `requirements.txt`: Lista de dependencias y versiones de Python necesarias para ejecutar el código.
 - `environment.yml`: Archivo de entorno con las dependencias para crear un entorno de Conda.
-
-### Archivos Web
-- `templates/index.html`: Página HTML para ingresar datos y ver la predicción en un entorno web.
-- `static/css/styles.css`: Hoja de estilos CSS para dar formato a la interfaz web.
+ 
 
 ### Otros Archivos
 - `README.md`: Este archivo que proporciona información general sobre el proyecto.
@@ -26,14 +27,12 @@ Este proyecto se enfoca en predecir la supervivencia de los pasajeros a bordo de
 ## Instrucciones de Uso
 
 1. Instalar las dependencias necesarias ejecutando `pip install -r requirements.txt` o creando un entorno de Conda con `conda env create -f environment.yml`.
-2. Ejecutar el archivo Jupyter Notebook `titanic_model.ipynb` para realizar el análisis de datos, seleccionar el modelo y entrenarlo.
-3. Ejecutar `python titanic_predictor.py` para realizar predicciones utilizando el modelo KNN entrenado.
-4. Para una interfaz web, ejecutar una aplicación Django con `python manage.py runserver` y acceder a `http://localhost:8000` en el navegador.
+2. Ejecutar `python manage.py runserver` para iniciar el servidor Django.
+3. Acceder a `http://localhost:8000` en el navegador para utilizar la interfaz web y realizar predicciones.
 
 ## Notas Adicionales
 
-- El modelo KNN se eligió después de evaluar varios modelos y se ajustó para obtener resultados óptimos.
-- La interfaz web proporciona una forma fácil de ingresar datos y obtener predicciones de supervivencia.
+- La aplicación Django utiliza un modelo KNN previamente entrenado para realizar predicciones de supervivencia en el Titanic.
 - Asegúrese de tener instaladas las bibliotecas mencionadas en `requirements.txt` antes de ejecutar el código.
 
-Este proyecto ofrece una solución integral para la predicción de supervivencia en el Titanic, desde el análisis de datos hasta la implementación en una interfaz web interactiva.
+Este proyecto ofrece una solución integral para la predicción de supervivencia en el Titanic mediante una aplicación web desarrollada con Django.
