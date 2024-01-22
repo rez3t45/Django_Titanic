@@ -1,49 +1,39 @@
-## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-### General Info
-***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
-## Technologies
-***
-A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+# Predicción de Supervivencia en el Titanic
+
+Este proyecto se enfoca en predecir la supervivencia de los pasajeros a bordo del Titanic utilizando machine learning. Varios modelos fueron evaluados, y el K-Nearest Neighbors (KNN) fue seleccionado como el modelo final para realizar las predicciones.
+
+## Contenido del Repositorio
+
+### Archivos del Código Fuente
+- `titanic_model.ipynb`: Jupyter Notebook que contiene el análisis de datos, la selección del modelo y el entrenamiento del modelo KNN.
+- `titanic_predictor.py`: Script de Python que implementa la funcionalidad de predicción utilizando el modelo KNN entrenado.
+
+### Archivos de Datos
+- `Titanic_train.csv`: Conjunto de datos de entrenamiento utilizado para entrenar y evaluar los modelos.
+- `Titanic_test.csv`: Conjunto de datos de prueba utilizado para realizar predicciones.
+
+### Archivos de Configuración
+- `requirements.txt`: Lista de dependencias y versiones de Python necesarias para ejecutar el código.
+- `environment.yml`: Archivo de entorno con las dependencias para crear un entorno de Conda.
+
+### Archivos Web
+- `templates/index.html`: Página HTML para ingresar datos y ver la predicción en un entorno web.
+- `static/css/styles.css`: Hoja de estilos CSS para dar formato a la interfaz web.
+
+### Otros Archivos
+- `README.md`: Este archivo que proporciona información general sobre el proyecto.
+
+## Instrucciones de Uso
+
+1. Instalar las dependencias necesarias ejecutando `pip install -r requirements.txt` o creando un entorno de Conda con `conda env create -f environment.yml`.
+2. Ejecutar el archivo Jupyter Notebook `titanic_model.ipynb` para realizar el análisis de datos, seleccionar el modelo y entrenarlo.
+3. Ejecutar `python titanic_predictor.py` para realizar predicciones utilizando el modelo KNN entrenado.
+4. Para una interfaz web, ejecutar una aplicación Django con `python manage.py runserver` y acceder a `http://localhost:8000` en el navegador.
+
+## Notas Adicionales
+
+- El modelo KNN se eligió después de evaluar varios modelos y se ajustó para obtener resultados óptimos.
+- La interfaz web proporciona una forma fácil de ingresar datos y obtener predicciones de supervivencia.
+- Asegúrese de tener instaladas las bibliotecas mencionadas en `requirements.txt` antes de ejecutar el código.
+
+Este proyecto ofrece una solución integral para la predicción de supervivencia en el Titanic, desde el análisis de datos hasta la implementación en una interfaz web interactiva.
